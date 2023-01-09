@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>GSA Members</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">GLORY SIGNATURE ASSEMBLY</div>
+      </nav>
+    </header>
+
+    <h2></h2>
+    <!-- COLLECT DETAILS -->
+
+    <form action="POST" id="memberForm">
+      <input
+        type="text"
+        name="fullname"
+        id="fullname"
+        placeholder="Enter full name"
+      />
+      <input type="email" name="email" id="email" placeholder="Email" />
+      <input
+        type="text"
+        name="phoneNumber"
+        id="phoneNumber"
+        placeholder="Phone Number"
+      />
+      <input type="text" id="address" placeholder="Address" />
+      <input type="date" name="dob" id="dob" />
+
+      <button type="submit" name="submit" value="submit">Add member</button>
+    </form>
+    <hr>
+
+    <!-- CREATING A LIST -->
+    <h2>List of GSA members</h2>
+    <ul id="memberList">
+      <li class="memberCard">
+        <h3 class="memberName">Name</h3>
+        <p class="email">Email</p>
+        <p class="phone">Phone</p>
+        <p class="address">Address</p>
+        <p>09-01-2023</p>
+        <button class="editBtn">Edit</button>
+        <button class="deleteBtn">Delete</button>
+      </li>
+    </ul>
+  </body>
+  <script src="/index.js"></script>
+</html>
