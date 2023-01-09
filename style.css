@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@300;400;500&family=Patrick+Hand&family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+font-family: 'Merienda', cursive;
+}
+
+body{
+    
+}
+
+nav{
+    height: 3.5rem;
+    background-color: rgb(26, 16, 3);
+    align-items: center;
+}
+
+.logo{
+    color: rgb(230, 182, 9);
+    width: fit-content;
+    margin: auto;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    font-family: 'Righteous', cursive;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 10rem;
+    max-width: 40vw;
+    justify-content: left;
+}
+
+input{
+    padding:.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    outline-color: rgb(26, 16, 3);
+}
+
+button{
+    background-color: rgb(26, 16, 3);
+    color: rgb(230, 182, 9);
+    margin-top: 1rem;
+    padding: 1rem 0;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: .35rem;
+    cursor: pointer;
+    transition: ease-in .1s;
+}
+
+button:hover{
+    background-color: rgb(230, 182, 9);
+    color: rgb(1, 1, 0);
+}
+
+h2{
+    margin: 2rem 10rem;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 10rem;
+    justify-content:flex-start;
+}
+
+#memberList li{
+    list-style: none;
+    width: 18vw;
+    background-color: rgba(230, 182, 9, .1);
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+    margin-right: .5rem;
+    border: 1px solid rgb(26, 16, 3);;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+h3{
+    margin: .5rem;
+}
+
+p{
+    margin: .5rem;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+li button{
+    margin: .5rem 0 ;
+}
+
+.editBtn{
+    background-color: white;
+    border: 1px solid brown;
+    margin-left: .5rem;
+    padding: .25rem .75rem;
+}
+
+.deleteBtn{
+    background-color: brown;
+    color: azure;
+    border: 1px solid brown;
+    padding: .25rem .75rem;
+    margin-left: .5rem;
+}
