@@ -93,3 +93,5 @@ function deleteMember() {
         document.querySelector('li').style.display = 'none'
     })
 }
+
+

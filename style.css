@@ -6,10 +6,6 @@
 font-family: 'Merienda', cursive;
 }
 
-body{
-    
-}
-
 nav{
     width: 100vw;
     display: flex;
@@ -77,8 +73,8 @@ h2{
 ul{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    padding: 0 0rem 0 10rem;
+    width: 90vw;
+    margin-left: 8rem ;
     justify-content:flex-start;
 }
 
@@ -86,13 +82,14 @@ ul{
     list-style: none;
     width: 18vw;
     background-color: rgba(230, 182, 9, .1);
-    padding: 1rem 2rem;
+    padding: 1rem .5rem;
     margin: 2rem 0rem;
     margin-right: .5rem;
     border: 1px solid rgb(26, 16, 3);;
     border-radius: 5px;
     overflow: hidden;
 }
+
 
 h3{
     margin: .5rem;
@@ -102,6 +99,7 @@ p{
     margin: .5rem;
     font-weight: 300;
     font-size: 1rem;
+    width: 80%;
 }
 
 li button{
@@ -121,4 +119,38 @@ li button{
     border: 1px solid brown;
     padding: .25rem .75rem;
     margin-left: .5rem;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width:700px){
+    
+    .logo{
+        font-size: .8rem;
+        margin-left: -2rem ;
+    }
+    nav h2{
+        margin: 0 2rem;
+    }
+form{
+    margin: 2rem;
+    max-width: 90vw;
+}
+nav h2{
+    font-size: 1.1rem;
+}
+#heading{
+    margin: 2rem;
+    font-size: 1.2rem;
+}
+#memberList{
+    margin: 0 2rem;
+    padding: 0;
+    width: 80vw;
+}
+    #memberList li{
+        width: 100%;
+        margin: .5rem 0;
+    }
 }
