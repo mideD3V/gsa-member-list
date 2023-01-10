@@ -10,6 +10,7 @@
   <body>
     <header>
       <nav>
+          <h2>GSA</h2>
         <div class="logo">GLORY SIGNATURE ASSEMBLY</div>
       </nav>
     </header>
@@ -17,7 +18,8 @@
     <h2></h2>
     <!-- COLLECT DETAILS -->
 
-    <form action="POST" id="memberForm">
+    <form method="POST" id="memberForm">
+        <label>Fill the form below to add a new member</label>
       <input
         type="text"
         name="fullname"
@@ -26,7 +28,7 @@
       />
       <input type="email" name="email" id="email" placeholder="Email" />
       <input
-        type="text"
+        type="tel"
         name="phoneNumber"
         id="phoneNumber"
         placeholder="Phone Number"
@@ -39,16 +41,16 @@
     <hr>
 
     <!-- CREATING A LIST -->
-    <h2>List of GSA members</h2>
+    <h2 id="heading">List of GSA new members</h2> 
     <ul id="memberList">
       <li class="memberCard">
         <h3 class="memberName">Name</h3>
         <p class="email">Email</p>
         <p class="phone">Phone</p>
         <p class="address">Address</p>
-        <p>09-01-2023</p>
+        <p>Birthday</p>
         <button class="editBtn">Edit</button>
-        <button class="deleteBtn">Delete</button>
+        <button class="deleteBtn" onclick="deleteMember()">Delete</button>
       </li>
     </ul>
   </body>
