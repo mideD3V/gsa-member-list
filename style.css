@@ -65,7 +65,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0 10rem;
+    padding: 0 0rem 0 10rem;
     justify-content:flex-start;
 }
 
