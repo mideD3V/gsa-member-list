@@ -70,11 +70,14 @@ function addNewMember() {
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const li = addNewMember();
+    const li = addNewMember();
+    
 
   if (fullName.value === "") {
-    alert("Fill in the details");
+    alert("Fill in the required details");
   } else {
     ul.appendChild(li);
   }
+
+form.reset();
 });
