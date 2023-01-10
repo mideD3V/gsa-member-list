@@ -16,7 +16,8 @@ dob.setAttribute("max", year + "-12-31");
 //CREATING MEMBER CARD
 
 function addNewMember() {
-  const li = document.createElement("li");
+    const li = document.createElement("li");
+    
 
   //create name div
   const memberName = document.createElement("h3");
@@ -49,8 +50,11 @@ function addNewMember() {
 
   //delete button
   const deleteBtn = document.createElement("button");
-  deleteBtn.classList.add("deleteBtn");
-  deleteBtn.textContent = "Delete";
+    deleteBtn.classList.add("deleteBtn");
+    deleteBtn.setAttribute('onclick', 'deleteMember()')
+    deleteBtn.textContent = "Delete";
+    
+
 
   //append buttons to parent div
   modifyDiv.appendChild(editBtn);
@@ -81,3 +85,11 @@ form.addEventListener("submit", (event) => {
 
 form.reset();
 });
+
+//delete button
+    
+function deleteMember() {
+    addEventListener('click', () => {
+        document.querySelector('li').style.display = 'none'
+    })
+}
